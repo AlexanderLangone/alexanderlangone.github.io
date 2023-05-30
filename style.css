@@ -156,6 +156,7 @@
     font-size:7rem;
 }
 
+
 .description2{
     
     opacity: 40%;
@@ -164,9 +165,16 @@
     padding-bottom:4%;
 }
 
+.big-email{
+    opacity: 100%;
+    padding-right: 8%;
+    font-size: 56px;
+    padding-bottom:4%;
+}
+
 .email{
     display:flex;
-    font-size:3rem;
+    font-size:rem;
     font-weight:250;
     padding-left: 8%;
 }
@@ -341,6 +349,13 @@ form {
     padding-left: 12%;
     display:flex;
     
+}
+
+.big-email{
+    opacity: 100%;
+    padding-right: 8%;
+    font-size: 28px;
+    padding-bottom:4%;
 }
 
 .email{
