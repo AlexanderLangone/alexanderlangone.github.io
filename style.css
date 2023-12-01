@@ -104,7 +104,7 @@
     flex-direction: column;
     padding-top:6%;
     padding-left:2%;
-    padding-right:2%;    
+    padding-right:40%;    
 }
 
 .projects-word{
@@ -137,6 +137,10 @@
 
 .title{
     padding-top:5%;
+    padding-left: 8%;
+}
+
+.title2{
     padding-left: 8%;
 }
 
@@ -235,7 +239,6 @@ form {
 }
 
 
-
 @media (max-width: 600px) {
     .hello{
         font-size: 1.5rem;
@@ -284,6 +287,7 @@ form {
     
 /*  EVERYTHING BELOW IS PROJECTS AND BELOW  */
 
+
 .projects-container{
     display:flex;
     flex-direction: column;
@@ -322,6 +326,12 @@ form {
 
 .title{
     padding-top:5%;
+    padding-left: 8%;
+    font-size: 85%;
+      
+}
+
+.title2{
     padding-left: 8%;
     font-size: 85%;
       
