@@ -11567,6 +11567,7 @@ html {
   background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
 }
 
+
 .text-gradient {
   background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
   -webkit-background-clip: text;
@@ -11595,6 +11596,13 @@ html {
   max-height: 40rem;
   max-width: 40rem;
 }
+.profile-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5vw;
+}
+
 .profile .profile-img {
   height: 80vw;
   max-height: 45rem;
@@ -11639,6 +11647,41 @@ html {
 .profile .dots-4 svg {
   fill: #1e30f3;
 }
+@media (max-width: 575px) {
+  .profile {
+    height: 50vw;
+    width: 50vw;
+    border-radius: 10vw; /* Adjusted to maintain proportionality on smaller screens */
+    margin-top: 3vw; /* Adjusted to fit better on smaller screens */
+    max-height: 30rem; /* Adjusted max-height for smaller screens */
+    max-width: 30rem; /* Adjusted max-width for smaller screens */
+  }
+  .profile .profile-img {
+    height: 55vw; /* Adjusted for smaller screens */
+    max-height: 35rem; /* Adjusted max-height for smaller screens */
+  }
+  
+  .profile .dots-1 {
+    width: 2vw; /* Slightly smaller for small screens */
+    right: 1vw; /* Adjusted position */
+    top: 2vw; /* Adjusted position */
+  }
+  .profile .dots-2 {
+    width: 2vw; /* Slightly smaller for small screens */
+    right: -2vw; /* Adjusted position */
+    top: 3vw; /* Adjusted position */
+  }
+  .profile .dots-3 {
+    width: 2vw; /* Slightly smaller for small screens */
+    left: 1vw; /* Adjusted position */
+    bottom: 3vw; /* Adjusted position */
+  }
+  .profile .dots-4 {
+    width: 2vw; /* Slightly smaller for small screens */
+    left: -2vw; /* Adjusted position */
+    bottom: 2vw; /* Adjusted position */
+  }
+}
 
 @media (min-width: 576px) {
   .profile {
@@ -11648,6 +11691,7 @@ html {
   .profile .profile-img {
     height: 65vw;
   }
+  
   .profile .dots-1 {
     width: 3vw;
     right: 1.5vw;
