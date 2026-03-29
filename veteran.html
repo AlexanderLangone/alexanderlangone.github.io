@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="From Soldier's Heart to PTSD: How the Military Learned to Take Trauma Seriously" />
+        <meta name="author" content="Alexander Langone" />
+        <title>Veterans & PTSD | Alex Langone</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            /* ── Article Hero ── */
+            .article-hero {
+                position: relative;
+                width: 100%;
+                min-height: 85vh;
+                background: url('https://upload.wikimedia.org/wikipedia/commons/f/fc/UH-1D_helicopters_in_Vietnam_1966.jpg') center center / cover no-repeat;
+                display: flex;
+                align-items: flex-end;
+            }
+            .article-hero::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.75) 100%);
+            }
+            .article-hero-content {
+                position: relative;
+                z-index: 2;
+                padding: 3rem 0 4rem;
+                width: 100%;
+            }
+            .article-hero-content .article-tag {
+                display: inline-block;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-weight: 700;
+                font-size: 0.75rem;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                color: #fff;
+                background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+                padding: 0.4rem 1.2rem;
+                border-radius: 2rem;
+                margin-bottom: 1.5rem;
+            }
+            .article-hero-content h1 {
+                font-family: 'Playfair Display', serif;
+                font-weight: 900;
+                font-size: clamp(2.2rem, 5vw, 3.8rem);
+                line-height: 1.15;
+                color: #fff;
+                max-width: 800px;
+                margin-bottom: 1.25rem;
+            }
+            .article-hero-content .article-subtitle {
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-weight: 300;
+                font-size: 1.2rem;
+                color: rgba(255,255,255,0.85);
+                max-width: 650px;
+                margin-bottom: 1.5rem;
+            }
+            .article-hero-content .article-meta {
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-size: 0.85rem;
+                color: rgba(255,255,255,0.6);
+                letter-spacing: 0.5px;
+            }
+            .article-hero-content .article-meta span {
+                margin: 0 0.5rem;
+            }
+
+            /* ── Article Body ── */
+            .article-body {
+                max-width: 750px;
+                margin: 0 auto;
+                padding: 3.5rem 1.5rem 2rem;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-size: 1.125rem;
+                line-height: 1.9;
+                color: #2d2d2d;
+            }
+            .article-body p {
+                margin-bottom: 1.75rem;
+            }
+            .article-body .drop-cap::first-letter {
+                font-family: 'Playfair Display', serif;
+                font-size: 4.5rem;
+                font-weight: 900;
+                float: left;
+                line-height: 0.75;
+                margin-right: 0.6rem;
+                margin-top: 0.15rem;
+                background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            /* ── Section Headers ── */
+            .article-body h2 {
+                font-family: 'Playfair Display', serif;
+                font-weight: 700;
+                font-size: 2rem;
+                margin-top: 3.5rem;
+                margin-bottom: 1.5rem;
+                background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            /* ── Pull Quotes ── */
+            .pull-quote {
+                border-left: 4px solid;
+                border-image: linear-gradient(to bottom, #1e30f3, #e21e80) 1;
+                margin: 2.5rem 0 2.5rem -1.5rem;
+                padding: 1.25rem 2rem;
+                background: rgba(30, 48, 243, 0.03);
+            }
+            .pull-quote p {
+                font-family: 'Playfair Display', serif;
+                font-style: italic;
+                font-size: 1.35rem;
+                line-height: 1.65;
+                color: #1a1a1a;
+                margin-bottom: 0.5rem !important;
+            }
+            .pull-quote cite {
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-style: normal;
+                font-size: 0.85rem;
+                font-weight: 600;
+                color: #888;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+            }
+
+            /* ── Inline Images ── */
+            .article-image {
+                margin: 2.5rem -3rem;
+                position: relative;
+            }
+            .article-image img {
+                width: 100%;
+                height: auto;
+                border-radius: 0.75rem;
+                box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            }
+            .article-image figcaption {
+                text-align: center;
+                font-size: 0.8rem;
+                color: #999;
+                margin-top: 0.75rem;
+                font-style: italic;
+            }
+
+            /* ── Divider ── */
+            .section-divider {
+                text-align: center;
+                margin: 3rem 0;
+                color: #ccc;
+                font-size: 1.5rem;
+                letter-spacing: 1rem;
+            }
+
+            /* ── Sources ── */
+            .article-sources {
+                margin-top: 3rem;
+                padding-top: 2rem;
+                border-top: 2px solid #eee;
+            }
+            .article-sources h3 {
+                font-family: 'Playfair Display', serif;
+                font-weight: 700;
+                font-size: 1.4rem;
+                margin-bottom: 1.25rem;
+                color: #1a1a1a;
+            }
+            .article-sources ul {
+                list-style: none;
+                padding: 0;
+            }
+            .article-sources li {
+                font-size: 0.95rem;
+                line-height: 1.7;
+                margin-bottom: 0.75rem;
+                padding-left: 1.25rem;
+                position: relative;
+                color: #555;
+            }
+            .article-sources li::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0.65rem;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #1e30f3, #e21e80);
+            }
+            .article-sources a {
+                color: #1e30f3;
+                text-decoration: none;
+                border-bottom: 1px solid rgba(30,48,243,0.2);
+                transition: border-color 0.2s;
+            }
+            .article-sources a:hover {
+                border-bottom-color: #1e30f3;
+            }
+
+            /* ── Responsive ── */
+            @media (max-width: 768px) {
+                .article-hero { min-height: 60vh; }
+                .article-image { margin: 2rem -0.5rem; }
+                .pull-quote { margin-left: 0; padding: 1rem 1.25rem; }
+                .pull-quote p { font-size: 1.15rem; }
+                .article-body { padding: 2.5rem 1.25rem 2rem; }
+            }
+        </style>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index"><span class="fw-bolder text-primary">Alexander.</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Hero -->
+            <header class="article-hero">
+                <div class="article-hero-content">
+                    <div class="container px-5">
+                        <div class="article-tag">Essay</div>
+                        <h1>How the Military Eventually Learned to Take Trauma Seriously</h1>
+                        <p class="article-subtitle">A history of denial, grudging acknowledgment, and the long fight to recognize what war does to a person.</p>
+                        <div class="article-meta">
+                            By <strong style="color: rgba(255,255,255,0.9);">Alexander Langone</strong>
+                            <span>&bull;</span> 12 min read
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Article Body -->
+            <article class="article-body">
+
+                <p class="drop-cap">I still find myself thinking about Herman's description of how World War I soldiers were viewed as either constitutionally flawed or as cowards/fakes when they suffered mental breakdowns. According to Herman, Soldiers who broke down mentally during WW1 were literally referred to as "moral invalids." Some of those broken men received electric shocks, to essentially punish them back into functionality so they could fight again, and none of it was done to help them heal. All the treatment did was treat their suffering.</p>
+
+                <p>Reading that, my initial thought was fine. That all happened over a century ago; surely we've learned that since then. However, the more I researched the U.S. military's history with psychological trauma, the less true that statement seems to be.</p>
+
+                <p>The military's approach to psychological trauma can be summed up as a never-ending cycle of denial, reluctant acceptance, and ultimately, denial. This pattern parallels the way that Herman states society will tend to ignore or deny the presence of trauma until society is forced to acknowledge it.</p>
+
+                <div class="pull-quote">
+                    <p>"The conflict between the will to deny horrible events and the will to proclaim them aloud is the central dialectic of psychological trauma."</p>
+                    <cite>Judith Herman, Trauma and Recovery</cite>
+                </div>
+
+                <!-- ── CIVIL WAR ── -->
+                <h2>"Soldier's Heart" &mdash; The Civil War</h2>
+
+                <p>Everything we know about PTSD has existed in soldiers for centuries, though it has gone by many names. During the American Civil War, it was referred to as "soldiers' heart" or "Da Costa's Syndrome," named after a physician who noticed soldiers returning home with difficulty breathing, rapid heartbeat, fatigue, and a type of anxiety that was triggered by anything related to battle. No one really understood what caused these problems. According to the National Center for PTSD, at the time, many believed that the primary causes were heavy packs and poor physical conditioning. In fact, many army doctors felt that the symptoms were due to poorly motivated recruits who had unreasonable expectations of war. It's crazy that they would make that claim instead of realizing the affects of war on the humans brain.</p>
+
+                <figure class="article-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Unidentified_group_of_Civil_War_soldiers._-_DPLA_-_eb2b0aef88cdd3f753cf57f54a534409.jpg" alt="Unidentified group of Civil War soldiers" loading="lazy" />
+                    <figcaption>Unidentified group of Civil War soldiers. Courtesy of Digital Public Library of America.</figcaption>
+                </figure>
+
+                <div class="section-divider">&bull; &bull; &bull;</div>
+
+                <!-- ── WWI ── -->
+                <h2>"Shell Shock" &mdash; World War I</h2>
+
+                <p>With WWI came "shell shock." The very term itself tells us something. Initially, experts theorized that the concussion caused by artillery blasts injured the brains of soldiers, thus creating a physical basis for what was happening to them. According to Humphreys in The Conversation, in 1915, a British doctor named Charles Myers coined the term and used it to describe his documentation of soldiers experiencing loss of memory, vision, smell, and taste with no identifiable physical injuries. While having a physical explanation provided credibility to the affliction, the physical explanation eventually collapsed as more and more soldiers began appearing with similar symptoms without any recorded exposure to blasts.</p>
+
+                <figure class="article-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Dressing_wounded_in_trench_during_the_battle_of_Courcelette._Sept._15%2C_1916.jpg" alt="Wounded soldiers in trenches during the Battle of Courcelette, 1916" loading="lazy" />
+                    <figcaption>Wounded soldiers in the trenches at the Battle of Courcelette, September 15, 1916. Public domain.</figcaption>
+                </figure>
+
+                <p>It soon was obvious that the symptoms were psychological. As quickly as that became apparent, the sympathetic response vanished along with it.</p>
+
+                <p>As reported in an article published in The Conversation regarding the historical context of shell shock, the treatment options available to soldiers struggling with this new affliction were essentially as harsh as their punishments. According to Humphreys in The Conversation, soldiers were just as likely to receive disciplinary actions such as electric current applied to paralyzed limbs as they were to receive medical attention.</p>
+
+                <div class="pull-quote">
+                    <p>The authors' interpretation was that because there was no recognized physical reason for the problem, the soldier was either weak or lying. Herman would instantly recognize this phenomenon. It is precisely what occurs when society determines that addressing the consequences of trauma in people is too difficult. Calling someone suffering from trauma defective is clearly more expedient than dealing with the societal factors that destroyed them.</p>
+                </div>
+
+                <div class="section-divider">&bull; &bull; &bull;</div>
+
+                <!-- ── WWII ── -->
+                <h2>"Battle Fatigue" &mdash; World War II</h2>
+
+                <p>The treatment model for the period between World Wars I and II did not fundamentally change; however, there was an acknowledgement that the issue was changing. For example, during World War II, it became generally recognized that any soldier can crack (under) pressure of battle; therefore, psychiatric casualties were anticipated to occur depending upon the intensity and length of combat exposure. The 'moral invalid' term was changed to 'battle fatigue,' but both concepts carry their own problems. Battle fatigue suggests that war causes weariness among its participants rather than that some individuals are not capable of enduring it. According to the U.S. Department of Veterans Affairs, some military leaders, like General Patton, did not believe battle fatigue was real. In addition, this story represents how, although the general societal attitude regarding the treatment of military personnel experiencing mental health issues has evolved since World War I, the internal military environment continues to reinforce an expectation of toughness.</p>
+
+                <figure class="article-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Tom_Lea_-_2000_Yard_Stare.jpg" alt="The 2000 Yard Stare by Tom Lea, 1944" loading="lazy" />
+                    <figcaption>"The 2,000 Yard Stare" by Tom Lea, 1944. U.S. Army Art Collection. One of the most powerful depictions of combat's psychological toll.</figcaption>
+                </figure>
+
+                <div class="section-divider">&bull; &bull; &bull;</div>
+
+                <!-- ── KOREA & LANGUAGE ── -->
+                <h2>The Language of Distance</h2>
+
+                <p>The term used for these experiences changed again during the Korean conflict from 'battle fatigue' to 'operational exhaustion.' In his 1990 HBO special Doin' It Again, comedian George Carlin described the progression of terms used to describe the same combat condition. He illustrated the development of the terms from 'shell shock' all the way to PTSD. He pointedly noted that each subsequent term further obscured the actuality of the individual's experience. He stated that 'shell shock' conveyed a sense of immediate feeling, but PTSD would be minimized or dismissed as it was abscured. His argument is consistent with what Herman states regarding the way that society creates environments that discourage survivors from expressing themselves. Although Herman does not specifically reference sanitized medical terminology as a method of discouraging survivor expression, her comments do relate to the manner in which increased abstraction contributes to creating such an environment.</p>
+
+                <div class="section-divider">&bull; &bull; &bull;</div>
+
+                <!-- ── VIETNAM ── -->
+                <h2>Vietnam &mdash; Where It All Gets Complicated</h2>
+
+                <p>The situation becomes significantly more complex during the Vietnam War. Military psychiatrists attempted to apply what they believed they had learned from past conflicts - treating the soldier quickly near the area he experienced the traumatic event and returning him to active duty. However, the overall number of acute psychiatric episodes experienced by U.S. military personnel during the Vietnam conflict was lower than those experienced in previous wars. At first glance, it seems like this is moving in the right direction. However, in contrast to expectations, post-conflict psychological treatment needs were quite high. According to Crocq and Crocq in Dialogues in Clinical Neuroscience, approximately 700,000 Vietnam era veterans, almost a quarter of all who served, required some form of psychological help.The relatively low level of acute psychiatric breakdowns experienced during the conflict did not indicate that trauma was not occurring. Rather, the trauma was being delayed and expressed in other forms once veterans returned to civilian life without any available means to assist them.</p>
+
+                <figure class="article-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UH-1D_helicopters_in_Vietnam_1966.jpg" alt="UH-1D helicopters airlifting soldiers in Vietnam, 1966" loading="lazy" />
+                    <figcaption>U.S. Army helicopters airlift soldiers during Operation "Wahiawa" in Vietnam, 1966. Public domain.</figcaption>
+                </figure>
+
+                <p>In particular, Vietnam veterans faced unique difficulties upon their return from service. According to the Vietnam Veterans Memorial Fund, while their fathers had come home to celebrations, Vietnam veterans were often told to hide their service and many were maligned and mistreated. Many Vietnam veterans were treated poorly by others. The public perception of the Vietnam conflict was negative, so few veterans felt happy about their service and have others be proud of it. Herman presents a three-stage framework for recovery, which includes establishing safety, reconstructing the traumatic story, and restoring connection with community. Veterans returning from Vietnam did not have access to any aspect of this framework. Many returned to economic instability (poverty), substance abuse, unstable housing arrangements, so they lacked basic safety. In addition, many veterans found it difficult to establish a cohesive narrative about their experiences in Vietnam due to widespread social disapproval for participation in the war. Finally, many veterans encountered difficulty reestablishing contact with supportive community members, as those same communities sent messages indicating that service in Vietnam should be considered embarrassing.</p>
+
+                <div class="section-divider">&bull; &bull; &bull;</div>
+
+                <!-- ── DSM & POLITICS ── -->
+                <h2>The DSM &mdash; Science, Politics, and Whose Trauma Counts</h2>
+
+                <p>It was veterans of Vietnam, survivors of the Holocaust, and survivors of sexual assaults who effectively pushed PTSD (Post-Traumatic Stress Disorder) into being included in the Diagnostic Statistical Manual (DSM). According to the U.S. Department of Veterans Affairs, PTSD was first officially added to the DSM-III in 1980, stemming from research on Vietnam veterans, Holocaust survivors, and sexual trauma victims. This may seem insignificant. However, The Conversation reports that the inclusion of PTSD in the DSM-III resulted in the shift in focus from identifying the fault as being with the individual experiencing the traumatic event to recognizing that the traumatic event was responsible for the disorder. That is exactly what Herman is advocating for within her book. A traumatic experience occurs to you. It does not indicate a pre-existing defect within you. The fact that it was not until 1980 that PTSD was included in the DSM and required a battle for recognition indicates an unpleasant aspect of institutional reluctance to acknowledge these issues.</p>
+
+                <p>It was truly political. According to Humphreys in The Conversation, the push to include PTSD in the DSM was championed by Vietnam Veterans Against the War and psychiatrists Chaim Shatan and Robert Jay Lifton. While this may be somewhat inspiring when viewed from one perspective, it poses another rather obvious question. Whose trauma receives the type of advocacy efforts necessary to result in its inclusion in the DSM and whose does not?</p>
+
+                <div class="pull-quote">
+                    <p>Herman addresses this issue directly. In addition to combat, domestic violence, sexual assault, child abuse -- all produce identical symptoms and were largely ignored during the same period of time. There existed no advocates with institutional influence to promote their inclusion in the DSM at that time.</p>
+                </div>
+
+                <div class="section-divider">&bull; &bull; &bull;</div>
+
+                <!-- ── WHERE WE ARE NOW ── -->
+                <h2>Where Does This Leave Things Now?</h2>
+
+                <p>What does that leave us today? The VA states that the diagnostic criteria for PTSD have been revised numerous times since 1980. According to the U.S. Department of Veterans Affairs, current data shows about 4 in every 100 American men and 10 in every 100 American women will be diagnosed with PTSD in their lifetime. According to the National Center for PTSD, military personnel serving in combat zones were 12.1 percentage points more likely to receive a PTSD diagnosis than those in non-combat roles. There is much more available today regarding treatment programs and support services offered by the VA and there is at least formal acknowledgement that such problems exist. Compared to over a century prior, that is a significant improvement. Nevertheless, there is still stigma surrounding receiving mental health treatment. Many service members remain reluctant to seek assistance, as they fear that seeking treatment may impact their careers and/or how others view them. The policy changed far more quickly than did cultural attitudes toward mental illness within the military. Cultural attitudes within the military change significantly more slowly than almost any other entity.</p>
+
+                <div class="section-divider">&bull; &bull; &bull;</div>
+
+                <!-- ── CONCLUSION ── -->
+                <h2>The Central Dialectic</h2>
+
+                <p>Herman describes "the conflict between the will to deny horrible events and the will to proclaim them aloud" as the "central dialectic of psychological trauma." This statement continued to echo throughout my exploration of this topic. Shell Shock was recognized as legitimate, then it became seen as a weakness. Battle Fatigue was initially accepted, but General Patton famously rejected it entirely, refusing to believe the condition was real. Despite having lower acute breakdown rates among U.S. servicemen than any previous American conflict, the Vietnam War produced the greatest number of long-term psychological casualties. The DSM ultimately formally designated the condition known as PTSD; it was only because individuals advocated for its inclusion in the DSM. Based upon Herman's work and supported by evidence based on historical context, it appears to me that you cannot treat trauma while simultaneously attempting to deny that trauma exists. Prior to World War I, the military required functional soldiers more than honesty concerning what war does to individuals. These two ideals do not coexist well, and for many years, soldiers paid dearly for this tension.</p>
+
+                <!-- ── SOURCES ── -->
+                <div class="article-sources">
+                    <h3>Sources</h3>
+                    <ul>
+                        <li>Herman, Judith Lewis. <em>Trauma and Recovery.</em> Basic Books, 1992.</li>
+                        <li>U.S. Department of Veterans Affairs. "History of PTSD in Veterans: Civil War to DSM-5." <a href="https://www.ptsd.va.gov/understand/what/history_ptsd.asp" target="_blank">ptsd.va.gov</a></li>
+                        <li>Humphreys, Mark. "From Shell Shock to PTSD: Proof of War's Traumatic History." <em>The Conversation</em>, 2015. <a href="https://theconversation.com/from-shell-shock-to-ptsd-proof-of-wars-traumatic-history-37858" target="_blank">theconversation.com</a></li>
+                        <li>Vietnam Veterans Memorial Fund. "Post-Traumatic Stress Disorder (PTSD)." <a href="https://www.vvmf.org/topics/PTSD/" target="_blank">vvmf.org</a></li>
+                        <li>National Center for PTSD / NCBI Bookshelf. "History, Diagnostic Criteria, and Epidemiology." <a href="https://www.ncbi.nlm.nih.gov/books/NBK201095/" target="_blank">ncbi.nlm.nih.gov</a></li>
+                        <li>Crocq, Marc-Antoine, and Louis Crocq. "From Shell Shock and War Neurosis to Posttraumatic Stress Disorder: A History of Psychotraumatology." <em>Dialogues in Clinical Neuroscience</em>, vol. 2, no. 1, 2000. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3181586/" target="_blank">pmc.ncbi.nlm.nih.gov</a></li>
+                        <li>Carlin, George. <em>Doin' It Again.</em> HBO Special, 1990.</li>
+                    </ul>
+                </div>
+
+            </article>
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-light py-4 mt-auto">
+            <div class="container px-5 bg-light">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0" id="copyright"></div></div>
+                    <script>
+                        var currentYear = new Date().getFullYear();
+                        document.getElementById("copyright").innerHTML = "Copyright &copy; Alexander Langone " + currentYear;
+                    </script>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
