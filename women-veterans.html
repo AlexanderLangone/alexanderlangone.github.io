@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="What Counts as Trauma: Military Sexual Trauma, Combat, and the Gendered Limits of PTSD" />
+        <meta name="author" content="Alexander Langone" />
+        <title>What Counts as Trauma | Alex Langone</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            /* ── Article Hero ── */
+            .article-hero {
+                position: relative;
+                width: 100%;
+                min-height: 85vh;
+                background: url('https://upload.wikimedia.org/wikipedia/commons/9/9f/Womeninmilservicememor-large.jpg') center center / cover no-repeat;
+                display: flex;
+                align-items: flex-end;
+            }
+            .article-hero::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.8) 100%);
+            }
+            .article-hero-content {
+                position: relative;
+                z-index: 2;
+                padding: 3rem 0 4rem;
+                width: 100%;
+            }
+            .article-hero-content .article-tag {
+                display: inline-block;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-weight: 700;
+                font-size: 0.75rem;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                color: #fff;
+                background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+                padding: 0.4rem 1.2rem;
+                border-radius: 2rem;
+                margin-bottom: 1.5rem;
+            }
+            .article-hero-content h1 {
+                font-family: 'Playfair Display', serif;
+                font-weight: 900;
+                font-size: clamp(2.2rem, 5vw, 3.8rem);
+                line-height: 1.15;
+                color: #fff;
+                max-width: 800px;
+                margin-bottom: 1.25rem;
+            }
+            .article-hero-content .article-subtitle {
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-weight: 300;
+                font-size: 1.2rem;
+                color: rgba(255,255,255,0.85);
+                max-width: 650px;
+                margin-bottom: 1.5rem;
+            }
+            .article-hero-content .article-meta {
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-size: 0.85rem;
+                color: rgba(255,255,255,0.6);
+                letter-spacing: 0.5px;
+            }
+            .article-hero-content .article-meta span {
+                margin: 0 0.5rem;
+            }
+
+            /* ── Article Body ── */
+            .article-body {
+                max-width: 750px;
+                margin: 0 auto;
+                padding: 3.5rem 1.5rem 2rem;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-size: 1.125rem;
+                line-height: 1.9;
+                color: #2d2d2d;
+            }
+            .article-body p {
+                margin-bottom: 1.75rem;
+            }
+            .article-body .drop-cap::first-letter {
+                font-family: 'Playfair Display', serif;
+                font-size: 4.5rem;
+                font-weight: 900;
+                float: left;
+                line-height: 0.75;
+                margin-right: 0.6rem;
+                margin-top: 0.15rem;
+                background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            /* ── Section Headers ── */
+            .article-body h2 {
+                font-family: 'Playfair Display', serif;
+                font-weight: 700;
+                font-size: 2rem;
+                margin-top: 3.5rem;
+                margin-bottom: 1.5rem;
+                background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            /* ── Pull Quotes ── */
+            .pull-quote {
+                border-left: 4px solid;
+                border-image: linear-gradient(to bottom, #1e30f3, #e21e80) 1;
+                margin: 2.5rem 0 2.5rem -1.5rem;
+                padding: 1.25rem 2rem;
+                background: rgba(30, 48, 243, 0.03);
+            }
+            .pull-quote p {
+                font-family: 'Playfair Display', serif;
+                font-style: italic;
+                font-size: 1.35rem;
+                line-height: 1.65;
+                color: #1a1a1a;
+                margin-bottom: 0.5rem !important;
+            }
+            .pull-quote cite {
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-style: normal;
+                font-size: 0.85rem;
+                font-weight: 600;
+                color: #888;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+            }
+
+            /* ── Inline Images ── */
+            .article-image {
+                margin: 2.5rem -3rem;
+                position: relative;
+            }
+            .article-image img {
+                width: 100%;
+                height: auto;
+                border-radius: 0.75rem;
+                box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            }
+            .article-image figcaption {
+                text-align: center;
+                font-size: 0.8rem;
+                color: #999;
+                margin-top: 0.75rem;
+                font-style: italic;
+            }
+
+            /* ── Divider ── */
+            .section-divider {
+                text-align: center;
+                margin: 3rem 0;
+                color: #ccc;
+                font-size: 1.5rem;
+                letter-spacing: 1rem;
+            }
+
+            /* ── Sources ── */
+            .article-sources {
+                margin-top: 3rem;
+                padding-top: 2rem;
+                border-top: 2px solid #eee;
+            }
+            .article-sources h3 {
+                font-family: 'Playfair Display', serif;
+                font-weight: 700;
+                font-size: 1.4rem;
+                margin-bottom: 1.25rem;
+                color: #1a1a1a;
+            }
+            .article-sources ul {
+                list-style: none;
+                padding: 0;
+            }
+            .article-sources li {
+                font-size: 0.95rem;
+                line-height: 1.7;
+                margin-bottom: 0.75rem;
+                padding-left: 1.25rem;
+                position: relative;
+                color: #555;
+            }
+            .article-sources li::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0.65rem;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #1e30f3, #e21e80);
+            }
+            .article-sources a {
+                color: #1e30f3;
+                text-decoration: none;
+                border-bottom: 1px solid rgba(30,48,243,0.2);
+                transition: border-color 0.2s;
+            }
+            .article-sources a:hover {
+                border-bottom-color: #1e30f3;
+            }
+
+            /* ── Responsive ── */
+            @media (max-width: 768px) {
+                .article-hero { min-height: 60vh; }
+                .article-image { margin: 2rem -0.5rem; }
+                .pull-quote { margin-left: 0; padding: 1rem 1.25rem; }
+                .pull-quote p { font-size: 1.15rem; }
+                .article-body { padding: 2.5rem 1.25rem 2rem; }
+            }
+        </style>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index"><span class="fw-bolder text-primary">Alexander.</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Hero -->
+            <header class="article-hero">
+                <div class="article-hero-content">
+                    <div class="container px-5">
+                        <div class="article-tag">Essay</div>
+                        <h1>What Counts as Trauma: Military Sexual Trauma, Combat, and the Gendered Limits of PTSD</h1>
+                        <p class="article-subtitle">A look at who the PTSD diagnosis was built for, whose injuries get counted, and what "coming home" looks like for women who served.</p>
+                        <div class="article-meta">
+                            By <strong style="color: rgba(255,255,255,0.9);">Alexander Langone</strong>
+                            <span>&bull;</span> 11 min read
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Article Body -->
+            <article class="article-body">
+
+                <p class="drop-cap">Start reading about women veterans and you run into a statistic that almost nobody I've talked to seems to know. At Veterans Affairs, roughly one in three women who screens for Military Sexual Trauma says yes, she experienced unwanted sexual contact or harassment during service. The rate among men is about one in fifty, but because the military is still overwhelmingly male, the raw numbers of men and women reporting MST are closer than you'd think. That is a strange fact to sit with. It is stranger when you put it next to the thing I wrote about in my last essay, which is that the U.S. military spent a century figuring out how to call combat trauma by its proper name. We went from "soldier's heart" to "shell shock" to "battle fatigue" to, finally, PTSD. Each shift was pushed through by people who insisted their injury be recognized. What happens to the soldiers whose injury does not fit the archetype of the man under fire?</p>
+
+                <p>That question has been pulling at me since we read Judith Herman earlier in the semester. Herman argued that trauma only gets taken seriously when a social movement insists on it. The PTSD diagnosis we use today, she pointed out, was built largely out of the advocacy of Vietnam veterans, Holocaust survivors, and feminist researchers working on sexual violence. Three separate constituencies. Each pushed for pieces of the diagnostic category, and each had to fight. The version that ended up in the DSM in 1980, and has been revised ever since, carries traces of that fight. Whose trauma made it in, and whose framing got to define the category, still shapes who is visible as a trauma survivor today. Women who serve in the military end up at a peculiar intersection of those debates, and the tools we have for recognizing their suffering are still catching up.</p>
+
+                <div class="pull-quote">
+                    <p>"The ordinary response to atrocities is to banish them from consciousness."</p>
+                    <cite>Judith Herman, Trauma and Recovery</cite>
+                </div>
+
+                <figure class="article-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/125_future_WACS_take_oath_on_United_States_Capitol_steps%2C_1943_%2836865945893%29.jpg" alt="125 future members of the Women's Army Corps take the oath of enlistment on the Capitol steps, 1943" loading="lazy" />
+                    <figcaption>125 future members of the Women's Army Corps take the oath of enlistment on the steps of the U.S. Capitol, 1943. Public domain, U.S. National Archives.</figcaption>
+                </figure>
+
+                <!-- ── THE STAT ── -->
+                <h2>The Stat That Doesn't Add Up</h2>
+
+                <p>I want to go back to a statistic we talked about in Module 7. In 2012, more active-duty Army soldiers died by suicide than by combat. The usual framing of that figure is that war is horrifying and PTSD kills. Both are true. But there is a detail that is easy to gloss over. A significant number of those suicides were among service members who never deployed to a combat zone. The usual combat PTSD story does not cover them. If you believe the loss is real, and you believe the number is the number, you have to ask what exactly is hurting them, because the thing hurting them is not necessarily the thing we picture when we picture a broken soldier.</p>
+
+                <p>Military Sexual Trauma is one of the answers. It is not the only answer. There is also the stress of deployment separations, hazing, the suicide risk of firearm access, and a long list of other issues. But MST is a big one, and it disproportionately affects women. VA data consistently shows that women who screen positive for MST are substantially more likely to be diagnosed with PTSD than women who screen negative. For men, the association is also strong. The catch is that the public conversation about military trauma almost never starts here. It starts with combat, and when it finishes with combat, the conversation is usually over.</p>
+
+                <div class="section-divider">&bull; &bull; &bull;</div>
+
+                <!-- ── WHAT THE DSM COUNTS ── -->
+                <h2>What the DSM Counts</h2>
+
+                <p>The DSM's Criterion A for PTSD specifies what counts as a qualifying traumatic event. In DSM-III, when PTSD was first introduced in 1980, Criterion A referred to an event "outside the range of usual human experience." That phrasing is telling. It implies that assault, battering, and sexual violence are not usual. In the DSM-5, Criterion A has been revised to list the categories more plainly: actual or threatened death, serious injury, or sexual violence, including direct experience, witnessing, learning of it happening to a close family member or friend, or repeated exposure to aversive details, as in the work of first responders.</p>
+
+                <div class="pull-quote">
+                    <p>"Certain violations of the social compact are too terrible to utter aloud: this is the meaning of the word unspeakable."</p>
+                    <cite>Judith Herman, Trauma and Recovery</cite>
+                </div>
+
+                <p>That revision helped. MST is clearly a Criterion A event under the current language. But Criterion A is not where the gendered trouble starts. It starts earlier, with the question of what kind of stressor we are socialized to recognize. When the DSM was rewritten in 1980, the public archetype of trauma was the Vietnam veteran. A specific image formed. A young man, in uniform, haunted by what he had seen abroad. Herman herself has noted that the diagnosis we got was shaped by that archetype even though she and other researchers who worked on women's trauma helped build the category. The clinical language caught up faster than the cultural imagination.</p>
+
+                <div class="section-divider">&bull; &bull; &bull;</div>
+
+                <!-- ── MST IN NUMBERS ── -->
+                <h2>Military Sexual Trauma, in Numbers</h2>
+
+                <p>MST is the VA's shorthand for sexual assault and severe sexual harassment experienced during military service. VA screens every veteran who enters its health system. The rates they report are not perfect prevalence estimates, because screening captures disclosure rather than incidence, but they are the best numbers we have.</p>
+
+                <p>According to VA and the Department of Defense, across recent screening years, about one in three women veterans and about one in fifty men report MST when screened. Because men outnumber women in the force by a wide margin, the raw number of men reporting MST is not negligible. For women, MST is strongly linked with PTSD, depression, and suicidality. Its association with PTSD is consistently found to be stronger than combat exposure alone. Work by Rachel Kimerling and colleagues at VA has repeatedly found that MST is one of the most potent predictors of PTSD among women veterans.</p>
+
+                <p>One other detail from DoD's own annual reporting. Only a fraction of MST cases ever result in a formal unrestricted report. Most remain restricted or are never reported at all. The reasons are not mysterious. Fear of retaliation, small unit size, concern about career, and the practical reality that the perpetrator is often in the chain of command all press toward silence. Herman would not be surprised.</p>
+
+                <div class="section-divider">&bull; &bull; &bull;</div>
+
+                <!-- ── DIAGNOSIS GAP ── -->
+                <h2>Why Men and Women Don't Get Diagnosed the Same Way</h2>
+
+                <p>Once you start reading, it becomes clear that PTSD does not always present the same way across genders. Men with PTSD tend to be identified through externalizing symptoms, such as anger, aggression, and substance use. Women tend to be identified through internalizing symptoms, such as depression, anxiety, and somatic complaints. That difference is partly biological, partly social, and partly about clinician bias. Studies have found that women with PTSD are more likely to be diagnosed with depression first, sometimes for years, before the PTSD diagnosis is ever made.</p>
+
+                <p>This matters for women veterans. A woman who leaves service after MST, carries symptoms for a decade, and finally shows up at a clinic is more likely to be handed a Zoloft prescription and a generalized anxiety label than she is to get routed to trauma-informed care. The diagnosis that Herman and her collaborators fought to put in the DSM is the one that would fit her best. The diagnosis she gets may not be that one.</p>
+
+                <div class="pull-quote">
+                    <p>"Psychological trauma is an affliction of the powerless."</p>
+                    <cite>Judith Herman, Trauma and Recovery</cite>
+                </div>
+
+                <div class="section-divider">&bull; &bull; &bull;</div>
+
+                <!-- ── WHERE SOLDIERS COME FROM ── -->
+                <h2>Where Soldiers Come From</h2>
+
+                <p>Heather Courtney's documentary <em>Where Soldiers Come From</em> follows three friends from Michigan's Upper Peninsula who enlist in the National Guard and deploy to Afghanistan. We watched it this semester and one scene from the homecoming sections kept coming back to me. The men are back home, in the same town, on the same couches, staring at the same ceilings, and the thing that is different is inside them. No one around them knows how to see it.</p>
+
+                <p>The film is about men, and its power lies in how quiet the trauma is, how much of it sits under the surface of everyday life. I watched it and kept thinking about the women who do not even show up in the frame. If the Upper Peninsula does not know how to see trauma in three guys who came back from combat, what is it supposed to see in a young woman who came back from a deployment where combat was not the worst thing that happened? What do we do with the soldier whose story cannot be told with a boot, a helmet, and a distant explosion?</p>
+
+                <figure class="article-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/%22WAAC_Capt._Charity_Adams_of_Columbia%2C_NC%2C_who_was_commissioned_from_the_first_officer_candidate_class%2C_and_the_first_of_-_NARA_-_531334.jpg" alt="WAAC Capt. Charity Adams, one of the first Black women commissioned in the Women's Army Auxiliary Corps" loading="lazy" />
+                    <figcaption>Capt. Charity Adams, one of the first Black women commissioned in the Women's Army Auxiliary Corps. U.S. National Archives, public domain.</figcaption>
+                </figure>
+
+                <p>The documentary's insight that surprised me most is that reintegration is not one moment. It is a long, slow failure to land. For women veterans with MST, that failure to land comes layered on top of a betrayal the civilian world does not have a good name for. Herman's three-stage framework for recovery asks for safety first, then reconstruction of the traumatic story, then reconnection with community. Safety is hard when the institution that failed you is also the institution providing your health care. Reconstruction is hard when the story is disbelieved. Reconnection is hard when the community you belong to is one that culturally prefers not to think about this.</p>
+
+                <div class="section-divider">&bull; &bull; &bull;</div>
+
+                <!-- ── SECOND INJURY ── -->
+                <h2>The Second Injury</h2>
+
+                <p>There is a term in the trauma literature for this. Jennifer Freyd calls it institutional betrayal. It names the specific harm that occurs when the institution a person trusts responds to their victimization by protecting itself instead of them. In the military context, institutional betrayal has a very concrete shape. It is the command climate survey that asks about retaliation. It is the reporting process that routes a sexual assault complaint up a chain where the accused's friends are the ones making decisions. It is the discharge that follows a complaint. It is the paperwork that gets lost.</p>
+
+                <p>Kirby Dick's 2012 documentary <em>The Invisible War</em> chronicled this in painful detail. The film was instrumental in pushing Congress and the Department of Defense to change their procedures for handling sexual assault cases. Some of those changes have mattered. Some have not. The point, for our purposes, is that MST is not just a trauma. It is a trauma whose processing is shaped, and often re-traumatized, by the very bureaucracy that the survivor has to navigate in order to get care. Herman has written that the recovery of a single person requires a social context willing to listen. Women veterans with MST do not always have that context, and the fact that the VA now has specific MST coordinators is a real improvement but not a resolution.</p>
+
+                <div class="section-divider">&bull; &bull; &bull;</div>
+
+                <!-- ── WHO GETS TO BE A VETERAN ── -->
+                <h2>Who Gets to Be a Veteran</h2>
+
+                <p>There is a cultural piece to all of this I cannot leave out. Women in the military have long been framed, in media and in casual conversation, as marginal. The nurses. The administrative staff. The support roles. Even when their actual jobs put them in convoys that get hit, or in helicopters that take fire. When a woman comes home with PTSD, she has a harder threshold to cross than a male veteran does. She has to make the case that she is, in fact, a veteran at all. That her deployment counted. That the violence done to her, which may have been done by another American in uniform rather than by a foreign combatant, deserves the same seriousness as the violence a civilian pictures when they picture war.</p>
+
+                <p>You can watch this play out in <em>Homeland</em>. Carrie Mathison does intelligence work under enormous mental strain, and the show frames her illness as a private, feminine weakness rather than as an injury from service. You see it in the language too. Coverage of women veterans still reaches for "survivor" where it would have reached for "veteran" if the person were a man. The words themselves tell you how far there is to go.</p>
+
+                <div class="pull-quote">
+                    <p>"It is very tempting to take the side of the perpetrator. All the perpetrator asks is that the bystander do nothing."</p>
+                    <cite>Judith Herman, Trauma and Recovery</cite>
+                </div>
+
+                <div class="section-divider">&bull; &bull; &bull;</div>
+
+                <!-- ── COMING HOME ── -->
+                <h2>What Counts as Coming Home</h2>
+
+                <p>I started this essay with a statistic. I want to end with the question the statistic is really asking. If trauma is real, and the military is a workplace, and most of the people who serve will not experience full-scale combat, then the category of military trauma you are willing to recognize will decide who you help.</p>
+
+                <p>The history of PTSD as a diagnosis is a history of categories widening under pressure. Herman's contribution, which I keep circling back to, is the observation that the widening always happens when survivors and their advocates force it to. In 1980 the push came from Vietnam veterans, Holocaust survivors, and feminist researchers. In the next decade the push may need to come from women veterans who are insisting that MST be treated not as a shameful footnote but as a combat injury in its own right. The Herman line I keep going back to is the one about denial being the ordinary response to atrocities. Denial is ordinary because it is easy. Looking at something costs more than looking away.</p>
+
+                <p>The men I grew up admiring who served honored the image of the soldier I inherited. I do not want to dishonor them by looking away from the women who served alongside them, women whose injuries cannot be summoned up by the image of a helicopter or a rifle. If there is one thing I take from this course, it is that the trauma we fail to name is the trauma we leave untreated. Naming it is not the end of the work. It is where the work starts.</p>
+
+                <!-- ── SOURCES ── -->
+                <div class="article-sources">
+                    <h3>Sources</h3>
+                    <ul>
+                        <li>Herman, Judith Lewis. <em>Trauma and Recovery: The Aftermath of Violence &mdash; From Domestic Abuse to Political Terror.</em> Basic Books, 1992.</li>
+                        <li>U.S. Department of Veterans Affairs. "Military Sexual Trauma." <a href="https://www.mentalhealth.va.gov/msthome/index.asp" target="_blank">mentalhealth.va.gov/msthome</a></li>
+                        <li>Kimerling, Rachel, et al. "The Veterans Health Administration and Military Sexual Trauma." <em>American Journal of Public Health</em>, vol. 97, no. 12, 2007. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2089083/" target="_blank">pmc.ncbi.nlm.nih.gov</a></li>
+                        <li>American Psychiatric Association. <em>Diagnostic and Statistical Manual of Mental Disorders (DSM-5).</em> APA, 2013. (Criterion A for PTSD.)</li>
+                        <li>Department of Defense. "Annual Report on Sexual Assault in the Military." <a href="https://www.sapr.mil/reports" target="_blank">sapr.mil/reports</a></li>
+                        <li>NBC News. "The Enemy Within: Soldier Suicides Outpaced Combat Deaths in 2012." <a href="https://www.nbcnews.com/health/enemy-within-soldier-suicides-outpaced-combat-deaths-2012-1b7981505" target="_blank">nbcnews.com</a></li>
+                        <li>NPR. "U.S. Military's Suicide Rate Surpassed Combat Deaths in 2012." <a href="https://www.npr.org/sections/thetwo-way/2013/01/14/169351757/u-s-militarys-suicide-rate-surpassed-combat-deaths-in-2012" target="_blank">npr.org</a></li>
+                        <li>Courtney, Heather, director. <em>Where Soldiers Come From.</em> Quincy Hill Films, 2011.</li>
+                        <li>Dick, Kirby, director. <em>The Invisible War.</em> Chain Camera Pictures, 2012.</li>
+                        <li>Freyd, Jennifer J., and Carly Smith. "Institutional Betrayal." <em>American Psychologist</em>, vol. 69, no. 6, 2014. <a href="https://dynamic.uoregon.edu/jjf/articles/sf2014.pdf" target="_blank">dynamic.uoregon.edu</a></li>
+                        <li><em>Homeland.</em> Created by Howard Gordon and Alex Gansa, Showtime, 2011&ndash;2020.</li>
+                    </ul>
+                </div>
+
+            </article>
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-light py-4 mt-auto">
+            <div class="container px-5 bg-light">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0" id="copyright"></div></div>
+                    <script>
+                        var currentYear = new Date().getFullYear();
+                        document.getElementById("copyright").innerHTML = "Copyright &copy; Alexander Langone " + currentYear;
+                    </script>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
